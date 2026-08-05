@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Assignment | Bluebird LMS</title>
+
+    <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/add-assignment.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            LMS
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Students
+                </a>
+            </li>
+
+            <li>
+                <a href="faculty-management.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Faculty
+                </a>
+            </li>
+
+            <li>
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="assignment-management.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance-management.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="examinations.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Examination
+                </a>
+            </li>
+
+            <li>
+                <a href="results.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="page-title">
+
+            <h1>Add Assignment</h1>
+
+            <p>Create a new assignment for students.</p>
+
+        </div>
+
+        <form id="assignmentForm">
+
+            <div class="form-grid">
+
+                <div class="input-box">
+
+                    <label>Assignment ID</label>
+
+                    <input
+                    type="text"
+                    id="assignmentId"
+                    placeholder="Enter Assignment ID"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Assignment Title</label>
+
+                    <input
+                    type="text"
+                    id="assignmentTitle"
+                    placeholder="Enter Assignment Title"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Course</label>
+
+                    <select id="course" required>
+
+                        <option value="">Select Course</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Faculty</label>
+
+                    <select id="faculty" required>
+
+                        <option value="">Select Faculty</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Semester</label>
+
+                    <select id="semester" required>
+
+                        <option value="">Select Semester</option>
+
+                        <option>I</option>
+                        <option>II</option>
+                        <option>III</option>
+                        <option>IV</option>
+                        <option>V</option>
+                        <option>VI</option>
+                        <option>VII</option>
+                        <option>VIII</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Total Marks</label>
+
+                    <input
+                    type="number"
+                    id="totalMarks"
+                    placeholder="100"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Due Date</label>
+
+                    <input
+                    type="date"
+                    id="dueDate"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Status</label>
+
+                    <select id="status">
+
+                        <option>Pending</option>
+
+                        <option>Submitted</option>
+
+                        <option>Completed</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="input-box full-width">
+
+                <label>Description</label>
+
+                <textarea
+                id="description"
+                rows="6"
+                placeholder="Assignment Description"></textarea>
+
+            </div>
+
+            <div class="input-box full-width">
+
+                <label>Upload Assignment PDF</label>
+
+                <input
+                type="file"
+                id="assignmentFile"
+                accept=".pdf">
+
+            </div>
+
+            <div class="button-group">
+
+                <button
+                type="submit"
+                class="save-btn">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Assignment
+
+                </button>
+
+                <button
+                type="button"
+                class="cancel-btn"
+                onclick="window.location='assignment-management.html'">
+
+                    Cancel
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script src="js/add-assignment.js"></script>
+
+</body>
+</html>

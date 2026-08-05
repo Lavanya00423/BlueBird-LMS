@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | LMS</title>
+
+    <link rel="stylesheet" href="css/student-dashboard.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Student</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Courses</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Study Materials</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Assignments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Attendance</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Exam Schedule</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    <span>Results</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span>My Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="student.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Topbar -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search courses, materials...">
+            </div>
+
+            <div class="top-icons">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <div class="profile">
+                    <img src="images/student.png" alt="Student">
+                    <span>Student</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Welcome -->
+
+        <section class="welcome">
+
+            <h1>Welcome, Student 👋</h1>
+
+            <p>
+                Access your courses, assignments, attendance,
+                exams and academic progress.
+            </p>
+
+        </section>
+
+        <!-- Dashboard Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-book-open"></i>
+                <h2>6</h2>
+                <p>My Courses</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-file-lines"></i>
+                <h2>3</h2>
+                <p>Pending Assignments</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h2>94%</h2>
+                <p>Attendance</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-award"></i>
+                <h2>8.7</h2>
+                <p>CGPA</p>
+            </div>
+
+        </section>
+
+        <!-- Today's Classes -->
+
+        <section class="activity">
+
+            <div class="activity-header">
+                <h2>Today's Classes</h2>
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Time</th>
+                        <th>Subject</th>
+                        <th>Faculty</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>09:00 AM</td>
+                        <td>Java Programming</td>
+                        <td>Dr. Kumar</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00 AM</td>
+                        <td>Data Structures</td>
+                        <td>Mrs. Priya</td>
+                    </tr>
+
+                    <tr>
+                        <td>02:00 PM</td>
+                        <td>DBMS</td>
+                        <td>Mr. Arun</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Announcements -->
+
+        <section class="activity" style="margin-top:30px;">
+
+            <div class="activity-header">
+                <h2>Latest Announcements</h2>
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Date</th>
+                        <th>Announcement</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>29 Jul 2026</td>
+                        <td>Assignment 3 Submission Extended</td>
+                        <td><span class="success">New</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>28 Jul 2026</td>
+                        <td>DBMS Internal Exam Schedule</td>
+                        <td><span class="pending">Upcoming</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>27 Jul 2026</td>
+                        <td>Holiday on Friday</td>
+                        <td><span class="success">Notice</span></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/student-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Examination | Bluebird LMS</title>
+
+    <link rel="stylesheet" href="css/create-exam.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <h2>Bluebird LMS</h2>
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="faculty-dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li>
+            <a href="courses.html">
+                <i class="fa-solid fa-book"></i>
+                Courses
+            </a>
+        </li>
+
+        <li>
+            <a href="attendance-management.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Attendance
+            </a>
+        </li>
+
+        <li>
+            <a href="assignments.html">
+                <i class="fa-solid fa-file-lines"></i>
+                Assignments
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="examinations.html">
+                <i class="fa-solid fa-file-pen"></i>
+                Examinations
+            </a>
+        </li>
+
+        <li>
+            <a href="results.html">
+                <i class="fa-solid fa-chart-column"></i>
+                Results
+            </a>
+        </li>
+
+    </ul>
+
+</aside>
+
+<!-- Main Content -->
+
+<main class="main-content">
+
+    <header class="header">
+
+        <h1>Create Examination</h1>
+
+        <a href="examinations.html">
+            <button class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back
+            </button>
+        </a>
+
+    </header>
+
+    <div class="exam-form">
+
+        <div class="input-group">
+            <label>Exam Name</label>
+            <input type="text" id="examName" placeholder="Enter Exam Name">
+        </div>
+
+        <div class="input-group">
+            <label>Department</label>
+            <select id="department">
+                <option>CSE</option>
+                <option>IT</option>
+                <option>ECE</option>
+                <option>EEE</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Year</label>
+            <select id="year">
+                <option>I Year</option>
+                <option>II Year</option>
+                <option>III Year</option>
+                <option>IV Year</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Subject</label>
+            <input type="text" id="subject" placeholder="Enter Subject">
+        </div>
+
+        <div class="input-group">
+            <label>Exam Date</label>
+            <input type="date" id="date">
+        </div>
+
+        <div class="input-group">
+            <label>Exam Time</label>
+            <input type="time" id="time">
+        </div>
+
+        <div class="input-group">
+            <label>Duration</label>
+            <input type="text" id="duration" placeholder="Example: 3 Hours">
+        </div>
+
+        <div class="input-group">
+            <label>Total Marks</label>
+            <input type="number" id="marks" placeholder="100">
+        </div>
+
+    </div>
+
+    <div class="button-group">
+
+        <button class="save-btn" onclick="saveExam()">
+            <i class="fa-solid fa-floppy-disk"></i>
+            Save Exam
+        </button>
+
+        <button class="reset-btn" onclick="resetForm()">
+            <i class="fa-solid fa-rotate"></i>
+            Reset
+        </button>
+
+    </div>
+
+</main>
+
+<script src="js/create-exam.js"></script>
+
+</body>
+</html>

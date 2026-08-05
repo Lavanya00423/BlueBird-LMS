@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Result | LMS</title>
+
+<link rel="stylesheet" href="add-result.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            LMS
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Students
+                </a>
+            </li>
+
+            <li>
+                <a href="faculty-management.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Faculty
+                </a>
+            </li>
+
+            <li>
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="assignment-management.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance-management.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="examination-management.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Examination
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="result-management.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="page-title">
+
+            <h1>Add Student Result</h1>
+
+            <p>Enter the student's examination result.</p>
+
+        </div>
+
+        <form id="resultForm">
+
+            <div class="form-grid">
+
+                <!-- Student -->
+
+                <div class="input-box">
+
+                    <label>Register Number</label>
+
+                    <select id="registerNo" required>
+
+                        <option value="">Select Register Number</option>
+
+                    </select>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Student Name</label>
+
+                    <input
+                    type="text"
+                    id="studentName"
+                    readonly>
+
+                </div>
+
+                <!-- Department -->
+
+                <div class="input-box">
+
+                    <label>Department</label>
+
+                    <input
+                    type="text"
+                    id="department"
+                    readonly>
+
+                </div>
+
+                <!-- Course -->
+
+                <div class="input-box">
+
+                    <label>Course</label>
+
+                    <select id="course" required>
+
+                        <option value="">Select Course</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Faculty -->
+
+                <div class="input-box">
+
+                    <label>Faculty</label>
+
+                    <select id="faculty" required>
+
+                        <option value="">Select Faculty</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Marks -->
+
+                <div class="input-box">
+
+                    <label>Internal Marks (50)</label>
+
+                    <input
+                    type="number"
+                    id="internalMarks"
+                    min="0"
+                    max="50"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>External Marks (50)</label>
+
+                    <input
+                    type="number"
+                    id="externalMarks"
+                    min="0"
+                    max="50"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Assignment Marks (20)</label>
+
+                    <input
+                    type="number"
+                    id="assignmentMarks"
+                    min="0"
+                    max="20"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Attendance Marks (5)</label>
+
+                    <input
+                    type="number"
+                    id="attendanceMarks"
+                    min="0"
+                    max="5"
+                    required>
+
+                </div>
+
+                <!-- Auto Calculated -->
+
+                <div class="input-box">
+
+                    <label>Total Marks</label>
+
+                    <input
+                    type="text"
+                    id="totalMarks"
+                    readonly>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Percentage</label>
+
+                    <input
+                    type="text"
+                    id="percentage"
+                    readonly>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Grade</label>
+
+                    <input
+                    type="text"
+                    id="grade"
+                    readonly>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Result</label>
+
+                    <input
+                    type="text"
+                    id="result"
+                    readonly>
+
+                </div>
+
+            </div>
+
+            <!-- Remarks -->
+
+            <div class="input-box full-width">
+
+                <label>Remarks</label>
+
+                <textarea
+                id="remarks"
+                rows="5"
+                placeholder="Enter Remarks"></textarea>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="button-group">
+
+                <button
+                type="submit"
+                class="save-btn">
+
+                    <i class="fa-solid fa-floppy-disk"></i>
+
+                    Save Result
+
+                </button>
+
+                <button
+                type="button"
+                class="cancel-btn"
+                onclick="window.location='result-management.html'">
+
+                    Cancel
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script src="add-result.js"></script>
+
+</body>
+</html>

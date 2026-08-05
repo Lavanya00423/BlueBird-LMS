@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* ========================= */
+/* Layout */
+/* ========================= */
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ========================= */
+/* Sidebar */
+/* ========================= */
+
+.sidebar{
+    width:260px;
+    background:linear-gradient(180deg,#5B4BDB,#7A3FF2);
+    color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+}
+
+.logo{
+    text-align:center;
+    font-size:38px;
+    font-weight:700;
+    padding:30px 0;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:20px 15px;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+}
+
+.sidebar ul li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:#fff;
+    padding:15px 20px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.sidebar ul li.active a,
+.sidebar ul li a:hover{
+    background:#fff;
+    color:#6A5AE0;
+    font-weight:600;
+}
+
+/* ========================= */
+/* Main Content */
+/* ========================= */
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:40px;
+}
+
+/* ========================= */
+/* Header */
+/* ========================= */
+
+.page-header{
+    margin-bottom:30px;
+}
+
+.page-header h1{
+    font-size:35px;
+    color:#333;
+}
+
+.page-header p{
+    color:#777;
+    margin-top:8px;
+}
+
+/* ========================= */
+/* Form Container */
+/* ========================= */
+
+.form-container{
+    background:#fff;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* ========================= */
+/* Form Grid */
+/* ========================= */
+
+#studentForm{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* ========================= */
+/* Photo Upload */
+/* ========================= */
+
+.photo-section{
+    grid-column:1 / span 2;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.photo-section label{
+    display:block;
+    font-weight:600;
+    margin-bottom:12px;
+    color:#444;
+}
+
+.photo-section input{
+    width:100%;
+    max-width:350px;
+    padding:10px;
+}
+
+/* ========================= */
+/* Input Group */
+/* ========================= */
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#444;
+}
+
+.input-group input,
+.input-group select{
+    padding:14px;
+    border:1px solid #dcdcdc;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus{
+    border-color:#6A5AE0;
+    box-shadow:0 0 8px rgba(106,90,224,.2);
+}
+
+/* ========================= */
+/* Password */
+/* ========================= */
+
+.password-box{
+    position:relative;
+}
+
+.password-box input{
+    padding-right:45px;
+}
+
+.password-box i{
+    position:absolute;
+    right:15px;
+    top:43px;
+    color:#777;
+    cursor:pointer;
+    font-size:18px;
+}
+
+/* ========================= */
+/* Buttons */
+/* ========================= */
+
+.button-group{
+    grid-column:1 / span 2;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.button-group button{
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.save-btn{
+    background:#6A5AE0;
+    color:#fff;
+}
+
+.save-btn:hover{
+    background:#5848d4;
+}
+
+.reset-btn{
+    background:#3498db;
+    color:#fff;
+}
+
+.reset-btn:hover{
+    background:#2980b9;
+}
+
+.cancel-btn{
+    background:#e74c3c;
+    color:#fff;
+}
+
+.cancel-btn:hover{
+    background:#c0392b;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media(max-width:900px){
+
+.sidebar{
+    width:90px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.sidebar ul li a span{
+    display:none;
+}
+
+.main-content{
+    margin-left:90px;
+    width:calc(100% - 90px);
+    padding:20px;
+}
+
+#studentForm{
+    grid-template-columns:1fr;
+}
+
+.photo-section,
+.button-group{
+    grid-column:1;
+}
+
+.button-group{
+    flex-direction:column;
+}
+
+.button-group button{
+    width:100%;
+}
+
+}

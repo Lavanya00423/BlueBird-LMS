@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Faculty | LMS</title>
+
+    <link rel="stylesheet" href="css/add-faculty.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            LMS
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Students
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="faculty-management.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Faculty
+                </a>
+            </li>
+
+            <li>
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Examination
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="page-title">
+
+            <h1>Add Faculty</h1>
+
+            <p>
+                Enter faculty information to register a new faculty member.
+            </p>
+
+        </div>
+
+        <div class="form-container">
+
+            <form id="facultyForm">
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Faculty ID</label>
+                        <input
+                            type="text"
+                            id="facultyId"
+                            placeholder="FAC001"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Faculty Name</label>
+                        <input
+                            type="text"
+                            id="facultyName"
+                            placeholder="Enter Faculty Name"
+                            required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Department</label>
+
+                        <select id="department" required>
+
+                            <option value="">Select Department</option>
+                            <option>CSE</option>
+                            <option>ECE</option>
+                            <option>IT</option>
+                            <option>AIML</option>
+                            <option>EEE</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Designation</label>
+
+                        <select id="designation" required>
+
+                            <option value="">Select Designation</option>
+                            <option>Professor</option>
+                            <option>Associate Professor</option>
+                            <option>Assistant Professor</option>
+                            <option>Lecturer</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            placeholder="Java Programming"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="faculty@gmail.com"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="9876543210"
+                            maxlength="10"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Qualification</label>
+
+                        <input
+                            type="text"
+                            id="qualification"
+                            placeholder="M.E., Ph.D"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Username</label>
+
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Faculty Username"
+                            required>
+
+                    </div>
+
+                    <div class="input-group password-box">
+
+                        <label>Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Create Password"
+                            required>
+
+                        <i
+                            class="fa-regular fa-eye"
+                            id="togglePassword">
+                        </i>
+
+                    </div>
+
+                </div>
+
+                <div class="button-group">
+
+                    <button
+                        type="submit"
+                        class="save-btn">
+
+                        <i class="fa-solid fa-floppy-disk"></i>
+
+                        Save Faculty
+
+                    </button>
+
+                    <button
+                        type="reset"
+                        class="reset-btn">
+
+                        <i class="fa-solid fa-rotate"></i>
+
+                        Reset
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/add-faculty.js"></script>
+
+</body>
+</html>

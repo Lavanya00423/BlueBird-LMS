@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | Bluebird LMS</title>
+
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+    <link rel="stylesheet" href="css/reports.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            Bluebird LMS
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Students
+                </a>
+            </li>
+
+            <li>
+                <a href="faculty-management.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Faculty
+                </a>
+            </li>
+
+            <li>
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="assignment-management.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance-management.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="examination-management.html">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Examination
+                </a>
+            </li>
+
+            <li>
+                <a href="result-management.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="main-content">
+
+        <div class="top-bar">
+
+            <h1>Reports Dashboard</h1>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-search"></i>
+
+                <input
+                type="text"
+                id="searchReport"
+                placeholder="Search Report">
+
+            </div>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h2 id="totalStudents">0</h2>
+                <p>Total Students</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2 id="totalFaculty">0</h2>
+                <p>Total Faculty</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-book"></i>
+                <h2 id="totalCourses">0</h2>
+                <p>Total Courses</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <h2 id="passRate">0%</h2>
+                <p>Pass Percentage</p>
+            </div>
+
+        </div>
+
+        <!-- Report Table -->
+
+        <div class="table-container">
+
+            <table id="reportTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Report</th>
+                        <th>Description</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Student Report</td>
+
+                        <td>View all student information</td>
+
+                        <td>
+
+                            <button class="view-btn"
+                            onclick="location.href='student-report.html'">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Faculty Report</td>
+
+                        <td>Faculty Performance Report</td>
+
+                        <td>
+
+                            <button class="view-btn"
+                            onclick="location.href='faculty-report.html'">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Attendance Report</td>
+
+                        <td>Attendance Statistics</td>
+
+                        <td>
+
+                            <button class="view-btn"
+                            onclick="location.href='attendance-report.html'">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Examination Report</td>
+
+                        <td>Exam Performance</td>
+
+                        <td>
+
+                            <button class="view-btn"
+                            onclick="location.href='examination-report.html'">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Result Report</td>
+
+                        <td>Marks & Grades</td>
+
+                        <td>
+
+                            <button class="view-btn"
+                            onclick="location.href='result-report.html'">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                                View
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/reports.js"></script>
+
+</body>
+</html>

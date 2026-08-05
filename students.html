@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management | LMS</title>
+
+    <link rel="stylesheet" href="css/students.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!--
+    
+Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            Student
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Students
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Faculty
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Examination
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <div class="top-bar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchStudent"
+                    placeholder="Search Student...">
+
+            </div>
+
+            <button class="add-btn" id="addStudentBtn">
+                <i class="fa-solid fa-plus"></i>
+                Add Student
+            </button>
+
+        </div>
+
+        <!-- Title -->
+
+        <div class="page-title">
+
+            <h1>Student Management</h1>
+
+            <p>
+                Manage all students, attendance, progress and registered courses.
+            </p>
+
+        </div>
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                <h2>520</h2>
+
+                <p>Total Students</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h2>210</h2>
+
+                <p>CSE Students</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-microchip"></i>
+
+                <h2>170</h2>
+
+                <p>ECE Students</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h2>140</h2>
+
+                <p>IT Students</p>
+
+            </div>
+
+        </div>
+
+        <!-- Students Table -->
+
+        <div class="table-container">
+
+            <table id="studentTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Photo</th>
+                        <th>Register No</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Year</th>
+                        <th>Course</th>
+                        <th>Attendance</th>
+                        <th>Progress</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td><i class="fa-solid fa-circle-user"></i></td>
+                        <td>23CSE001</td>
+                        <td>Lavanya</td>
+                        <td>CSE</td>
+                        <td>II</td>
+                        <td>Java</td>
+                        <td>95%</td>
+                        <td>92%</td>
+
+                        <td>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><i class="fa-solid fa-circle-user"></i></td>
+                        <td>23CSE002</td>
+                        <td>Rahul</td>
+                        <td>CSE</td>
+                        <td>II</td>
+                        <td>Python</td>
+                        <td>90%</td>
+                        <td>85%</td>
+
+                        <td>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td><i class="fa-solid fa-circle-user"></i></td>
+                        <td>23CSE003</td>
+                        <td>Priya</td>
+                        <td>IT</td>
+                        <td>II</td>
+                        <td>DBMS</td>
+                        <td>98%</td>
+                        <td>96%</td>
+
+                        <td>
+
+                            <button class="view-btn">
+                                View
+                            </button>
+
+                            <button class="edit-btn">
+                                Edit
+                            </button>
+
+                            <button class="delete-btn">
+                                Delete
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/students.js"></script>
+
+</body>
+</html>

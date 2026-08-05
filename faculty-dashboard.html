@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard | LMS</title>
+
+    <link rel="stylesheet" href="css/faculty-dashboard.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Faculty</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>My Courses</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>My Students</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="assignment-management.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Assignments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance-management.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Attendance</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="examinations.html">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Examinations</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="result-management.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    <span>Results</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Messages</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <span>My Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="faculty.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Bar -->
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" placeholder="Search...">
+
+            </div>
+
+            <div class="top-icons">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <div class="profile">
+
+                    <img src="images/faculty.png" alt="Faculty">
+
+                    <span>Faculty</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Welcome -->
+
+        <section class="welcome">
+
+            <h1>Welcome, Faculty 👋</h1>
+
+            <p>Manage your classes, assignments, attendance and examinations.</p>
+
+        </section>
+
+        <!-- Dashboard Cards -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h2>6</h2>
+
+                <p>My Courses</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                <h2>180</h2>
+
+                <p>Students</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <h2>24</h2>
+
+                <p>Assignments</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h2>92%</h2>
+
+                <p>Attendance</p>
+
+            </div>
+
+        </section>
+
+        <!-- Today's Schedule -->
+
+        <section class="activity">
+
+            <div class="activity-header">
+
+                <h2>Today's Schedule</h2>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Time</th>
+
+                        <th>Course</th>
+
+                        <th>Room</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>09:00 AM</td>
+
+                        <td>Java Programming</td>
+
+                        <td>Lab A</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>11:00 AM</td>
+
+                        <td>Data Structures</td>
+
+                        <td>Room 204</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>02:00 PM</td>
+
+                        <td>Database Management</td>
+
+                        <td>Room 305</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Recent Assignment Submissions -->
+
+        <section class="activity" style="margin-top:30px;">
+
+            <div class="activity-header">
+
+                <h2>Recent Assignment Submissions</h2>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Student</th>
+
+                        <th>Assignment</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Rahul</td>
+
+                        <td>Java Mini Project</td>
+
+                        <td><span class="success">Submitted</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Priya</td>
+
+                        <td>DBMS Record</td>
+
+                        <td><span class="success">Submitted</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Arun</td>
+
+                        <td>DSA Assignment</td>
+
+                        <td><span class="pending">Pending</span></td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/faculty-dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | LMS</title>
+
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Admin</h2>
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>Students</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="faculty-management.html">
+                    <i class="fa-solid fa-chalkboard-teacher"></i>
+                    <span>Faculty</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="assignment-management.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Assignments</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance-management.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Attendance</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="examinations.html">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Examinations</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="result-management.html">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    <span>Results</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Reports</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Top Navigation -->
+        <header class="topbar">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="top-icons">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <div class="profile">
+                    <img src="images/admin.png" alt="Admin">
+                    <span>Administrator</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Welcome -->
+        <section class="welcome">
+
+            <h1>Welcome, Administrator 👋</h1>
+            <p>Manage your Learning Management System efficiently.</p>
+
+        </section>
+
+        <!-- Statistics -->
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h2>520</h2>
+                <p>Students</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chalkboard-teacher"></i>
+                <h2>35</h2>
+                <p>Faculty</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-book"></i>
+                <h2>18</h2>
+                <p>Courses</p>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-file-lines"></i>
+                <h2>96</h2>
+                <p>Assignments</p>
+            </div>
+
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="activity">
+
+            <div class="activity-header">
+                <h2>Recent Activities</h2>
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Activity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>29 Jul 2026</td>
+                        <td>New Student Registered</td>
+                        <td><span class="success">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>29 Jul 2026</td>
+                        <td>Faculty Added AI Course</td>
+                        <td><span class="success">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>28 Jul 2026</td>
+                        <td>Exam Schedule Updated</td>
+                        <td><span class="pending">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>27 Jul 2026</td>
+                        <td>Attendance Uploaded</td>
+                        <td><span class="success">Completed</span></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/admin-dashboard.js"></script>
+
+</body>
+</html>

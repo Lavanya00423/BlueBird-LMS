@@ -1,0 +1,125 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Body Background */
+body{
+    background: url("../images/background.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Main Container (No White Background) */
+.container{
+    width:1100px;
+    max-width:95%;
+    padding:40px;
+    text-align:center;
+}
+
+/* Heading */
+.container h1{
+    font-size:45px;
+    color:#ffffff;
+    margin-bottom:10px;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.container p{
+    font-size:20px;
+    color:#ffffff;
+    margin-bottom:40px;
+    text-shadow:1px 1px 8px rgba(0,0,0,0.7);
+}
+
+/* Cards */
+.cards{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+/* Individual Card */
+.card{
+    width:280px;
+    background:rgba(255,255,255,0.92);
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* Images */
+.icon{
+    width:130px;
+    height:130px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+/* Card Title */
+.card h2{
+    color:#333;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    padding:12px 35px;
+    background:#5129d7;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#341a94;
+}
+
+/* Responsive */
+@media(max-width:900px){
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .card{
+        width:90%;
+        max-width:320px;
+    }
+
+    .container h1{
+        font-size:34px;
+    }
+
+    .container p{
+        font-size:18px;
+    }
+}

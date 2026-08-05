@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faculty Management | LMS</title>
+
+    <link rel="stylesheet" href="css/faculty-management.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            LMS
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Students
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="faculty-management.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Faculty
+                </a>
+            </li>
+
+            <li>
+                <a href="courses.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-circle-check"></i>
+                    Examination
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-square-poll-vertical"></i>
+                    Results
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Bar -->
+
+        <div class="top-bar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchFaculty"
+                    placeholder="Search Faculty...">
+
+            </div>
+
+            <button class="add-btn" id="addFacultyBtn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Faculty
+
+            </button>
+
+        </div>
+
+        <!-- Page Title -->
+
+        <div class="page-title">
+
+            <h1>Faculty Management</h1>
+
+            <p>
+
+                Manage all faculty members, departments and assigned subjects.
+
+            </p>
+
+        </div>
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h2>0</h2>
+
+                <p>Total Faculty</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-laptop-code"></i>
+
+                <h2>0</h2>
+
+                <p>CSE Faculty</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-microchip"></i>
+
+                <h2>0</h2>
+
+                <p>ECE Faculty</p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-code"></i>
+
+                <h2>0</h2>
+
+                <p>IT Faculty</p>
+
+            </div>
+
+        </div>
+
+        <!-- Faculty Table -->
+
+        <div class="table-container">
+
+            <table id="facultyTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Photo</th>
+                        <th>Faculty ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Subject</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="facultyTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/faculty-management.js"></script>
+
+</body>
+
+</html>

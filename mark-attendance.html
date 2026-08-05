@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mark Attendance | LMS</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/mark-attendance.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+
+<body>
+
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+
+    <div class="logo">
+        <h2>Bluebird LMS</h2>
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="faculty-dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+
+        <li>
+            <a href="courses.html">
+                <i class="fa-solid fa-book"></i>
+                Courses
+            </a>
+        </li>
+
+
+        <li class="active">
+            <a href="attendance-management.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                Attendance
+            </a>
+        </li>
+
+
+        <li>
+            <a href="assignments.html">
+                <i class="fa-solid fa-file"></i>
+                Assignments
+            </a>
+        </li>
+
+
+        <li>
+            <a href="examinations.html">
+                <i class="fa-solid fa-pen"></i>
+                Examinations
+            </a>
+        </li>
+
+
+        <li>
+            <a href="results.html">
+                <i class="fa-solid fa-chart-line"></i>
+                Results
+            </a>
+        </li>
+
+
+    </ul>
+
+
+</aside>
+
+
+
+
+
+<!-- Main Content -->
+
+<main class="main-content">
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <h1>
+            Mark Attendance
+        </h1>
+
+
+        <a href="attendance-management.html">
+            <button>
+                <i class="fa-solid fa-arrow-left"></i>
+                Back
+            </button>
+        </a>
+
+
+    </header>
+
+
+
+
+
+    <!-- Attendance Selection -->
+
+
+    <section class="attendance-form">
+
+
+        <div class="input-group">
+
+            <label>
+                Department
+            </label>
+
+            <select id="department">
+
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>IT</option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="input-group">
+
+            <label>
+                Year
+            </label>
+
+            <select id="year">
+
+                <option>II Year</option>
+                <option>I Year</option>
+                <option>III Year</option>
+                <option>IV Year</option>
+
+            </select>
+
+        </div>
+
+
+
+
+        <div class="input-group">
+
+            <label>
+                Subject
+            </label>
+
+            <select id="subject">
+
+                <option>Data Structures</option>
+                <option>Database Management System</option>
+                <option>Java Programming</option>
+                <option>Computer Networks</option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="input-group">
+
+            <label>
+                Date
+            </label>
+
+            <input type="date" id="date">
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Student Attendance Table -->
+
+
+    <section class="student-table">
+
+
+        <table>
+
+
+            <thead>
+
+                <tr>
+
+                    <th>S.No</th>
+
+                    <th>Register No</th>
+
+                    <th>Student Name</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+
+
+            <tbody id="studentList">
+
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td>22CSE001</td>
+
+                    <td>Arun Kumar</td>
+
+                    <td>
+
+                        <button class="present-btn"
+                        onclick="markPresent(this)">
+                            Present
+                        </button>
+
+
+                        <button class="absent-btn"
+                        onclick="markAbsent(this)">
+                            Absent
+                        </button>
+
+
+                    </td>
+
+                </tr>
+
+
+
+
+
+                <tr>
+
+                    <td>2</td>
+
+                    <td>22CSE002</td>
+
+                    <td>Lavanya</td>
+
+                    <td>
+
+
+                        <button class="present-btn"
+                        onclick="markPresent(this)">
+                            Present
+                        </button>
+
+
+                        <button class="absent-btn"
+                        onclick="markAbsent(this)">
+                            Absent
+                        </button>
+
+
+                    </td>
+
+
+                </tr>
+
+
+
+
+
+
+                <tr>
+
+                    <td>3</td>
+
+                    <td>22CSE003</td>
+
+                    <td>Priya</td>
+
+                    <td>
+
+
+                        <button class="present-btn"
+                        onclick="markPresent(this)">
+                            Present
+                        </button>
+
+
+                        <button class="absent-btn"
+                        onclick="markAbsent(this)">
+                            Absent
+                        </button>
+
+
+                    </td>
+
+                </tr>
+
+
+
+            </tbody>
+
+
+        </table>
+
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Save Button -->
+
+
+    <div class="save-section">
+
+
+        <button onclick="saveAttendance()">
+
+            <i class="fa-solid fa-save"></i>
+            Save Attendance
+
+        </button>
+
+
+    </div>
+
+
+
+</main>
+
+
+
+
+<!-- JavaScript File -->
+
+<script src="js/mark-attendance.js"></script>
+
+
+</body>
+
+</html>

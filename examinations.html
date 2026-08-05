@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examinations | Bluebird LMS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/examinations.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+         <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+    <!-- ================= Sidebar ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Bluebird LMS</h2>
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="faculty-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="courses.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="attendance-management.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="assignments.html">
+                    <i class="fa-solid fa-file-lines"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="examinations.html">
+                    <i class="fa-solid fa-file-pen"></i>
+                    Examinations
+                </a>
+            </li>
+
+            <li>
+                <a href="results.html">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Results
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= Main Content ================= -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <h1>Examinations</h1>
+
+            <button onclick="goToCreateExam()">
+                <i class="fa-solid fa-plus"></i>
+                Create Exam
+            </button>
+
+        </header>
+
+        <!-- ================= Summary Cards ================= -->
+
+        <section class="exam-cards">
+
+            <div class="card">
+                <i class="fa-solid fa-file-circle-plus"></i>
+
+                <div>
+                    <h3>Total Exams</h3>
+                    <p id="totalExams">12</p>
+                </div>
+            </div>
+
+            <div class="card upcoming-card">
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <div>
+                    <h3>Upcoming Exams</h3>
+                    <p id="upcomingExams">4</p>
+                </div>
+            </div>
+
+            <div class="card completed-card">
+                <i class="fa-solid fa-circle-check"></i>
+
+                <div>
+                    <h3>Completed Exams</h3>
+                    <p id="completedExams">8</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+
+                <div>
+                    <h3>Total Students</h3>
+                    <p id="students">60</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================= Search ================= -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchExam"
+                placeholder="Search by Exam Name">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+        <!-- ================= Exams Table ================= -->
+
+        <section class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>S.No</th>
+                        <th>Exam Name</th>
+                        <th>Subject</th>
+                        <th>Department</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Duration</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="examTable">
+
+                    <tr>
+                        <td>1</td>
+                        <td>Internal Assessment - I</td>
+                        <td>Data Structures</td>
+                        <td>CSE</td>
+                        <td>15-08-2026</td>
+                        <td>10:00 AM</td>
+                        <td>2 Hours</td>
+                        <td>
+                            <span class="status upcoming">
+                                Upcoming
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Model Examination</td>
+                        <td>DBMS</td>
+                        <td>CSE</td>
+                        <td>10-07-2026</td>
+                        <td>02:00 PM</td>
+                        <td>3 Hours</td>
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Semester Examination</td>
+                        <td>Java Programming</td>
+                        <td>CSE</td>
+                        <td>28-09-2026</td>
+                        <td>09:30 AM</td>
+                        <td>3 Hours</td>
+                        <td>
+                            <span class="status upcoming">
+                                Upcoming
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Unit Test - II</td>
+                        <td>Computer Networks</td>
+                        <td>CSE</td>
+                        <td>05-10-2026</td>
+                        <td>11:00 AM</td>
+                        <td>1 Hour</td>
+                        <td>
+                            <span class="status upcoming">
+                                Upcoming
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/examinations.js"></script>
+
+</body>
+
+</html>

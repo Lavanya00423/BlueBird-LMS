@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Login | LMS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/admin.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+<div class="background-shape"></div>
+
+<div class="login-container">
+
+    <!-- Left Side -->
+    <div class="left-panel">
+
+        <img src="images/admin.jpeg" alt="Admin Illustration" class="admin-image">
+
+        <h1>Administrator Portal</h1>
+
+        <p>
+            Welcome to the Learning Management System.
+            Login to manage students, faculty, courses,
+            attendance, examinations and reports.
+        </p>
+
+    </div>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Right Side -->
+    <div class="right-panel">
+
+        <div class="login-header">
+            <span class="line"></span>
+            <h2>Login as Admin User</h2>
+        </div>
+
+        <form id="loginForm">
+
+            <!-- Username -->
+            <div class="input-box">
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username"
+                    required
+                    pattern="[A-Za-z0-9@#$%^&*!._-]{3,20}"
+                    title="Username can contain letters, numbers and special characters.">
+
+                <i class="fa-regular fa-user"></i>
+
+            </div>
+
+            <!-- Password -->
+            <div class="input-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
+
+                <i class="fa-regular fa-eye" id="togglePassword"></i>
+
+            </div>
+
+            <!-- Login Button -->
+            <button type="submit">
+                LOGIN
+            </button>
+
+            <a href="#" class="forgot">
+                Forgot your password?
+            </a>
+
+            <a href="login.html" class="back">
+                ← Back
+            </a>
+
+        </form>
+
+        <div class="footer">
+            <a href="#">Terms of Use</a>
+            <span>|</span>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+</html>

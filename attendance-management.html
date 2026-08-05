@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management | LMS</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/attendance-management.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>Bluebird LMS</h2>
+        </div>
+
+        <ul>
+            <li>
+                <a href="faculty-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="attendance-management.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Attendance
+                </a>
+            </li>
+
+            <li>
+                <a href="assignment-management.html">
+                    <i class="fa-solid fa-file"></i>
+                    Assignments
+                </a>
+            </li>
+
+            <li>
+                <a href="examinations.html">
+                    <i class="fa-solid fa-pen"></i>
+                    Examinations
+                </a>
+            </li>
+
+            <li>
+                <a href="result-management.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Results
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+        <!-- Top Header -->
+        <header class="header">
+
+            <h1>
+                Attendance Management
+            </h1>
+
+            <button onclick="goToMarkAttendance()">
+                <i class="fa-solid fa-plus"></i>
+                Mark Attendance
+            </button>
+
+        </header>
+
+
+
+        <!-- Attendance Summary Cards -->
+
+        <section class="attendance-cards">
+
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <h3>Total Students</h3>
+                    <p id="totalStudents">60</p>
+                </div>
+            </div>
+
+
+            <div class="card present">
+                <i class="fa-solid fa-user-check"></i>
+                <div>
+                    <h3>Present</h3>
+                    <p id="presentCount">50</p>
+                </div>
+            </div>
+
+
+            <div class="card absent">
+                <i class="fa-solid fa-user-xmark"></i>
+                <div>
+                    <h3>Absent</h3>
+                    <p id="absentCount">10</p>
+                </div>
+            </div>
+
+
+            <div class="card percentage">
+                <i class="fa-solid fa-chart-pie"></i>
+                <div>
+                    <h3>Attendance %</h3>
+                    <p id="attendancePercentage">83%</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" 
+            id="searchStudent"
+            placeholder="Search student...">
+
+            <i class="fa-solid fa-search"></i>
+
+        </div>
+
+
+
+        <!-- Attendance Table -->
+
+        <section class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>S.No</th>
+                        <th>Student Name</th>
+                        <th>Register No</th>
+                        <th>Department</th>
+                        <th>Present Days</th>
+                        <th>Total Days</th>
+                        <th>Percentage</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="attendanceTable">
+
+
+                    <tr>
+                        <td>1</td>
+                        <td>Arun Kumar</td>
+                        <td>22CSE001</td>
+                        <td>CSE</td>
+                        <td>45</td>
+                        <td>50</td>
+                        <td>90%</td>
+                        <td>
+                            <span class="status good">
+                                Good
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>2</td>
+                        <td>Lavanya</td>
+                        <td>22CSE002</td>
+                        <td>CSE</td>
+                        <td>35</td>
+                        <td>50</td>
+                        <td>70%</td>
+                        <td>
+                            <span class="status warning">
+                                Average
+                            </span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>3</td>
+                        <td>Priya</td>
+                        <td>22CSE003</td>
+                        <td>CSE</td>
+                        <td>25</td>
+                        <td>50</td>
+                        <td>50%</td>
+                        <td>
+                            <span class="status poor">
+                                Poor
+                            </span>
+                        </td>
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JavaScript File -->
+    <script src="js/attendance-management.js"></script>
+
+
+</body>
+</html>

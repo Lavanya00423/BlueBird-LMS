@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student | LMS</title>
+
+    <link rel="stylesheet" href="css/add-student.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            LMS
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <span>Students</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="faculty.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <span>Faculty</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    <span>Courses</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="page-header">
+
+            <h1>Add New Student</h1>
+
+            <p>
+                Register a new student into the Learning Management System.
+            </p>
+
+        </div>
+
+        <div class="form-container">
+
+            <form id="studentForm">
+
+                <!-- Photo -->
+
+                <div class="photo-section">
+
+                    <label>Student Photo</label>
+
+                    <input
+                        type="file"
+                        id="studentPhoto"
+                        accept="image/*">
+
+                </div>
+
+                <!-- Register Number -->
+
+                <div class="input-group">
+
+                    <label>Register Number</label>
+
+                    <input
+                        type="text"
+                        id="registerNo"
+                        placeholder="Enter Register Number"
+                        required>
+
+                </div>
+
+                <!-- Student Name -->
+
+                <div class="input-group">
+
+                    <label>Student Name</label>
+
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter Student Name"
+                        required>
+
+                </div>
+
+                <!-- Department -->
+
+                <div class="input-group">
+
+                    <label>Department</label>
+
+                    <select id="department" required>
+
+                        <option value="">Select Department</option>
+
+                        <option>CSE</option>
+                        <option>IT</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>AI & DS</option>
+                        <option>AIML</option>
+                        <option>Mechanical</option>
+                        <option>Civil</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Year -->
+
+                <div class="input-group">
+
+                    <label>Year</label>
+
+                    <select id="year" required>
+
+                        <option value="">Select Year</option>
+
+                        <option>I Year</option>
+                        <option>II Year</option>
+                        <option>III Year</option>
+                        <option>IV Year</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Semester -->
+
+                <div class="input-group">
+
+                    <label>Semester</label>
+
+                    <select id="semester" required>
+
+                        <option value="">Select Semester</option>
+
+                        <option>Semester I</option>
+                        <option>Semester II</option>
+                        <option>Semester III</option>
+                        <option>Semester IV</option>
+                        <option>Semester V</option>
+                        <option>Semester VI</option>
+                        <option>Semester VII</option>
+                        <option>Semester VIII</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Course -->
+
+                <div class="input-group">
+
+                    <label>Course</label>
+
+                    <select id="course" required>
+
+                        <option value="">Select Course</option>
+
+                        <option>Java Programming</option>
+                        <option>Python Programming</option>
+                        <option>Web Development</option>
+                        <option>Database Management System</option>
+                        <option>Data Structures</option>
+                        <option>Operating Systems</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="input-group">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter Email"
+                        required>
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter Phone Number"
+                        maxlength="10"
+                        required>
+
+                </div>
+
+                <!-- Username -->
+
+                <div class="input-group">
+
+                    <label>Username</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Create Username"
+                        required>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-group password-box">
+
+                    <label>Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create Password"
+                        required>
+
+                    <i class="fa-regular fa-eye" id="togglePassword"></i>
+
+                </div>
+
+                <!-- Buttons -->
+
+                <div class="button-group">
+
+                    <button type="submit" class="save-btn">
+                        Save Student
+                    </button>
+
+                    <button type="reset" class="reset-btn">
+                        Reset
+                    </button>
+
+                    <button
+                        type="button"
+                        class="cancel-btn"
+                        onclick="window.location.href='students.html'">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/add-student.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Add Course | LMS</title>
+
+<link rel="stylesheet" href="css/add-course.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!-- Website Logo (Favicon) -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">LMS</div>
+
+        <ul>
+
+            <li>
+                <a href="admin-dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="students.html">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    Students
+                </a>
+            </li>
+
+            <li>
+                <a href="faculty-management.html">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Faculty
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="course-management.html">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <div class="page-title">
+
+            <h1>Add Course</h1>
+
+            <p>Create a new course for your Learning Management System.</p>
+
+        </div>
+
+        <div class="form-container">
+
+            <form id="courseForm">
+
+                <div class="form-grid">
+
+                    <!-- Course Code -->
+
+                    <div class="input-group">
+
+                        <label>Course Code</label>
+
+                        <input
+                        type="text"
+                        id="courseCode"
+                        placeholder="CS3301"
+                        required>
+
+                    </div>
+
+                    <!-- Course Name -->
+
+                    <div class="input-group">
+
+                        <label>Course Name</label>
+
+                        <input
+                        type="text"
+                        id="courseName"
+                        placeholder="Data Structures"
+                        required>
+
+                    </div>
+
+                    <!-- Department -->
+
+                    <div class="input-group">
+
+                        <label>Department</label>
+
+                        <select id="department" required>
+
+                            <option value="">Select Department</option>
+                            <option>CSE</option>
+                            <option>ECE</option>
+                            <option>IT</option>
+                            <option>AIML</option>
+                            <option>EEE</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Semester -->
+
+                    <div class="input-group">
+
+                        <label>Semester</label>
+
+                        <select id="semester" required>
+
+                            <option value="">Select Semester</option>
+                            <option>I</option>
+                            <option>II</option>
+                            <option>III</option>
+                            <option>IV</option>
+                            <option>V</option>
+                            <option>VI</option>
+                            <option>VII</option>
+                            <option>VIII</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Credits -->
+
+                    <div class="input-group">
+
+                        <label>Credits</label>
+
+                        <input
+                        type="number"
+                        id="credits"
+                        min="1"
+                        max="6"
+                        placeholder="4"
+                        required>
+
+                    </div>
+
+                    <!-- Faculty -->
+
+                    <div class="input-group">
+
+                        <label>Faculty</label>
+
+                        <select id="faculty" required>
+
+                            <option value="">
+                                Select Faculty
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Academic Year -->
+
+                    <div class="input-group">
+
+                        <label>Academic Year</label>
+
+                        <select id="academicYear" required>
+
+                            <option value="">Select Year</option>
+                            <option>2026-2027</option>
+                            <option>2027-2028</option>
+                            <option>2028-2029</option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Course Status -->
+
+                    <div class="input-group">
+
+                        <label>Status</label>
+
+                        <select id="status">
+
+                            <option>Active</option>
+                            <option>Inactive</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- Description -->
+
+                <div class="input-group">
+
+                    <label>Course Description</label>
+
+                    <textarea
+                    id="description"
+                    rows="6"
+                    placeholder="Enter Course Description..."
+                    required></textarea>
+
+                </div>
+
+                <div class="button-group">
+
+                    <button
+                    type="submit"
+                    class="save-btn">
+
+                        <i class="fa-solid fa-floppy-disk"></i>
+
+                        Save Course
+
+                    </button>
+
+                    <button
+                    type="reset"
+                    class="reset-btn">
+
+                        <i class="fa-solid fa-rotate"></i>
+
+                        Reset
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/add-course.js"></script>
+
+</body>
+</html>
